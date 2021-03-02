@@ -1,0 +1,115 @@
+\documentclass[mathserif,serif,unicode]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb,amsmath,mathrsfs,graphicx}
+\usepackage{array}
+\usepackage{ulem}\normalem
+\usepackage{tabularx,multirow}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage[linesnumbered,vlined]{algorithm2e}
+
+%\newrobustcmd*{\footlessfullcite}{\AtNextCite{\renewbibmacro{booktitle}{}\renewbibmacro{pages}{}\renewbibmacro{in:}{}}\footfullcite}
+%\bibliography{references}
+
+\setbeamercolor{footline}{fg=black}
+\setbeamerfont{footline}{series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+
+% Beamer themes and colors
+\usetheme{Frankfurt}
+\usecolortheme{seahorse}
+\usefonttheme[onlylarge]{structurebold}
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue
+  }
+
+\newcommand{\Tr}{\mathsf{\scriptstyle T}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+%\newcommand{\Prob}{\mathsf{P}}
+\newcommand{\Expect}{\mathsf{E}}
+\newcommand{\const}{\mathsf{const}}
+%\newcommand{\arg}{\mathsf{arg}}
+\newcommand{\aggr}{\mathsf{aggr}}
+\newcommand{\diag}{\mathsf{diag}}
+\newcommand{\corr}{\mathsf{corr}}
+\newcommand{\cov}{\mathsf{cov}}
+\newcommand{\Sim}{\mathsf{sim}}
+\newcommand{\Dir}{\mathsf{Dir}}
+\newcommand{\KL}{\mathsf{KL}}
+\newcommand{\tsum}{\mathop{\textstyle\sum}\limits}
+\newcommand{\tprod}{\mathop{\textstyle\prod}\limits}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\eps}{\epsilon}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\le}{\leqslant}
+\newcommand{\T}{\textsf{\upshape т}}
+\def\XX{\mathbb{X}}
+\def\YY{\mathbb{Y}}
+\def\RR{\mathbb{R}}
+\def\LL{{\mathscr L}}
+\def\cL{\mathscr{L}}
+
+\title{Поиск похожих изображений}
+\author{Андрей~Шадриков\\
+%  Сбербанк
+}
+\date{Март~2021}
+
+\usepackage{graphicx,natbib}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{1_intro}
+
+\include{2_vector}
+
+\include{3_local_descriptors}
+
+\include{9_outro}
+
+\begin{frame}[plain]
+
+\centering \Huge
+Спасибо за внимание!
+
+\vspace{17mm}
+\Large
+\begin{tabularx}{50mm}{Xl}
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/ods.png}
+      }
+      & @vuvko \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/1200px-Telegram_2019_Logo.png}
+      }
+      & @vuvko \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/GitHub-Mark-120px-plus.png}
+      }
+      & vuvko \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/1920px-XMPP_logo.svg.png}
+      }
+      & vuvko@fmap.me \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/1200px-Gmail_Icon.png}
+      }
+      & vuvko@fmap.me
+\end{tabularx}
+    
+\end{frame}
+
+\end{document}
