@@ -1,6 +1,6 @@
 \subsection{Angular Loss}
 
-\begin{frame}{Назад к классификации}
+\begin{frame}{Минимизация угла}
 
 Ещё раз про классификацию из дескриптора:
 \[
@@ -22,7 +22,7 @@
 
 А что если нам идею с зазором добавить в оптимизируемый нами угол?
 \[
-AngularLoss : \frac{e^{ m_1 \cos (m_2 \theta_{i} + m_3)} }{e^{ m_1 \cos (m_2 \theta_{i} + m_3) } + \sum_{j \neq i} e^{ m_1 \cos \theta_{j}} }
+AngularLoss : \frac{e^{ \cos (m_1 \theta_{i} + m_2) + m_3} }{e^{ \cos (m_1 \theta_{i} + m_2) + m_3} + \sum_{j \neq i} e^{ \cos \theta_{j}} }
 \]
 
 \centering

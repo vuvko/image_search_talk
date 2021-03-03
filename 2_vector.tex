@@ -23,11 +23,46 @@
 \end{frame}
 
 \begin{frame}{Разложение на базис}
-    
+
+Можно использовать кластеризацию для нахождения <<средних>> изображений, из которых будут составляться остальные.
+
+\centering
+\begin{tabular}{cc}
+    \includegraphics[width=0.4\textwidth]{images/faces/sphx_glr_plot_faces_decomposition_001.png} &
+    \includegraphics[width=0.4\textwidth]{images/faces/sphx_glr_plot_faces_decomposition_007.png}
+\end{tabular}
+
+\alternativefootnote{\url{https://scikit-learn.org/stable/auto_examples/decomposition/plot_faces_decomposition.html}}
+\end{frame}
+
+\begin{frame}{Разложение на базис}
+
+Можно вспомнить  метод главных компонент, чтобы найти нужный базис.
+
+\centering
+\begin{tabular}{cc}
+    \includegraphics[width=0.4\textwidth]{images/faces/sphx_glr_plot_faces_decomposition_001.png} &
+    \includegraphics[width=0.4\textwidth]{images/faces/sphx_glr_plot_faces_decomposition_002.png}
+\end{tabular}
+
+\alternativefootnote{\url{https://scikit-learn.org/stable/auto_examples/decomposition/plot_faces_decomposition.html}}
+\end{frame}
+
+\begin{frame}{Разложение на базис}
+
+Или даже добавить ограничение неотрицательности, чтобы полученные матрицы можно было хоть как-то считать картинками.
+
+\centering
+\begin{tabular}{cc}
+    \includegraphics[width=0.4\textwidth]{images/faces/sphx_glr_plot_faces_decomposition_001.png} &
+    \includegraphics[width=0.4\textwidth]{images/faces/sphx_glr_plot_faces_decomposition_003.png}
+\end{tabular}
+
+\alternativefootnote{\url{https://scikit-learn.org/stable/auto_examples/decomposition/plot_faces_decomposition.html}}
 \end{frame}
 
 \input{2_1_cnn_vector.tex}
 
-\input{2_2_metric_learning.tex}
-
 \input{2_3_angular_loss.tex}
+
+\input{2_2_metric_learning.tex}
