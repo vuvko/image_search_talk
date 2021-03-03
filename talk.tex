@@ -1,4 +1,4 @@
-\documentclass[mathserif,serif,unicode]{beamer}
+\documentclass[mathserif,serif,unicode,aspectratio=169]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{amssymb,amsmath,mathrsfs,graphicx}
@@ -7,6 +7,7 @@
 \usepackage{tabularx,multirow}
 \usepackage{booktabs}
 \usepackage{subcaption}
+\usepackage{tikz}
 \usepackage[linesnumbered,vlined]{algorithm2e}
 
 %\newrobustcmd*{\footlessfullcite}{\AtNextCite{\renewbibmacro{booktitle}{}\renewbibmacro{pages}{}\renewbibmacro{in:}{}}\footfullcite}
@@ -57,6 +58,12 @@
 \def\LL{{\mathscr L}}
 \def\cL{\mathscr{L}}
 
+\newcommand\alternativefootnote[1]{%
+  \tikz[remember picture,overlay]
+  \draw (current page.south west) +(1in + \oddsidemargin,0.5em)
+  node[anchor=south west,inner sep=0pt]{\parbox{\textwidth}{%
+      \rlap{\rule{10em}{0.4pt}}\raggedright\scriptsize#1}};}
+
 \title{Поиск похожих изображений}
 \author{Андрей~Шадриков\\
 %  Сбербанк
@@ -77,6 +84,8 @@
 \include{2_vector}
 
 \include{3_local_descriptors}
+
+\include{4_faster_search}
 
 \include{9_outro}
 
